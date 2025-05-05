@@ -1,5 +1,17 @@
 from typing import List
 
+"""
+Time complexity: O(m^3) ->
+sorting: mlogm
+we go through all possible lengths O(m)
+inside we go through i O(m)
+and then inside we test each possible cut O(m)
+
+Memory complexity: O(m^2) ->
+we have 2D array dp to hold minimum sum cuts
+for [i,j]
+"""
+
 class Solution:
     def minCost(self, n: int, cuts: List[int]) -> int:
         cuts.append(0)
